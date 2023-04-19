@@ -46,7 +46,7 @@ do
 
     Console.WriteLine(num);
 
-    if (num % 2 == 1 && num <= 60)
+    if (num % 2 == 1 && num < 60)
     {
         Console.WriteLine("Odd and less than 60");
     }
@@ -54,7 +54,7 @@ do
     {
         Console.WriteLine("Even and less than 25");
     }
-    else if (num % 2 == 0 && num > 26 && num < 60)
+    else if (num % 2 == 0 && num >= 26 && num <= 60)
     {
         Console.WriteLine("Even and between 26 and 60 inclusive");
     }
@@ -73,3 +73,4 @@ do
     Console.WriteLine("Do you want to play again? y/n");
 
     again = Console.ReadLine();
+Console.Readkey();
